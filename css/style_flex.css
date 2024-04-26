@@ -5,6 +5,7 @@
 
 body{
     padding: 10px;
+    background-color: #adff2f;
 }
 .container{
     width: 95%;
@@ -37,12 +38,30 @@ body{
     order: 3;
 }
 
-#one{
+#two{
     background-color: bisque;
     order: 1;
 }
 
-#one{
+#three{
     background-color: aqua;
     order: 2;
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        background-color:  rgb(255, 38, 85);;
+    }
+    .element{
+        border: 5px solid greenyellow;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body{
+        background-color: rgb(42, 0, 229);
+    }
+    .element{
+        border: 5px solid rgb(255, 38, 85);
+    }
 }
