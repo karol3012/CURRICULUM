@@ -80,7 +80,6 @@ nav {
 .hamburguer > i {
     font-size: 25px;
     line-height: 80px;
-    color: #d03d3d;
 }
 
 
@@ -97,6 +96,7 @@ nav {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    transition: all ease-in-out .6s;
 }
 
 .contenido-header>img {
@@ -393,4 +393,14 @@ nav {
     .hamburguer{
         display: block;
     }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
