@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendiendo Js</title>
+    <title>Aprendiendo js</title>
 </head>
-<body onload="load_page()">
-   <div>
+<!-- ONLOAD: Evento , LOAD_PAGE:Función -->
+<body onload="load_page()"> 
+    <div >
         <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" autocomplete="off">
+            <label for="name">Name: </label>
+            <input type="text" id="name" autocomplete="off" placeholder="Ingrese su nombre">
         </div>
         <div>
-            <label for="last_name">Lastname</label>
-            <input type="text" id="last_name" placeholder="ingrese su apellido">
+            <label for="last_name">Lastname: </label>
+            <input type="text" id="last_name" placeholder="Ingrese su apellido">
         </div>
-        <div>
-            <button id="send" onclick="send_form()">ENVIAR</button>
-        </div>
-        <div id="print"></div>
-   </div>
+    </div>
+    <div>
+        <button id="send" onclick="send_form()">ENVIAR</button>
+    </div>
+    <div id="print"></div>
+    <br><br>
+    <div>
+        <div id="text"></div>
+        <div><button onclick="action()">CALCULAR</button></div>
+        <div id="result"></div>
+        
+    </div>
+    
+    <div>
+        <button onclick="agregar()">AGREGAR</button> 
+        <input type="num"  id="num" size="1" placeholder="num">
+
+        <button onclick="eliminar()">ELIMINAR</button>
+        <input type="num" id="numDelete" size="1" placeholder="num">
+
+        <button onclick="agregar_prim()">AGREGAR PRIMERO</button>
+
+        <button onclick="eliminar_prim()">ELIMINAR PRIMERO</button>
+
+        <button onclick="reves()">IMP REVES</button>
+        <button onclick="limpiar()">LIMPIAR</button>
+    </div>
+    <div><input type="text" id="impresion" disabled></div>
 
 
-
-
-
-    <!--<script>
-        alert("HOLA MUNDO");
+    <!-- <script>
+        alert("Hola mundo")
     </script> -->
-    <script src="../js/sweetalert2@11.js"></script>
-    <script src="../js/funtions.js"></script>
+    <!-- <script src="../js/sweetalert2@11.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/functions.js">
+
+    </script>
 </body>
 </html>
